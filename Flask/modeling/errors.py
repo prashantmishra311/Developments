@@ -1,7 +1,7 @@
 
 # this file contains the custom exceptions for modeling
 
-class Errors(Exceptions):
+class Errors(Exception):
     pass
 
 class NonBinaryError(Errors):
