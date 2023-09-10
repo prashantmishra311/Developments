@@ -24,9 +24,9 @@ class TestClass(object):
         """        
 
         if self.middle_name:
-            return f"{self.first_name.lower()}.{self.middle_name.lower()}.{self.last_name}@gmail.com"
+            return f"{self.first_name.lower()}.{self.middle_name.lower()}.{self.last_name.lower()}@gmail.com"
         else:
-            return f"{self.first_name.lower()}.{self.last_name}@gmail.com"
+            return f"{self.first_name.lower()}.{self.last_name.lower()}@gmail.com"
 
 
 if __name__ == "__main__":
