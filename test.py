@@ -29,7 +29,7 @@ class TestClass(object):
             return f"{self.first_name.lower()}.{self.last_name}@gmail.com"
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     
     FIRST = 'Prashant'
     LAST = 'Mishra'
