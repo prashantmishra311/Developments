@@ -36,4 +36,5 @@ if __name__ == "__main__":
 
     test = TestClass(first_name=FIRST, last_name=LAST)
     mail = test.generate_mail()
+    print(f"Generated mail id is: {mail}")
         
