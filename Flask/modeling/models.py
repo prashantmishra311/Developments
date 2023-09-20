@@ -8,3 +8,5 @@ from sklearn.base import BaseEstimator, TransformerMixin, ClassifierMixin
 from errors import *
 from fabricate import *
 
+def func():
+    pass
