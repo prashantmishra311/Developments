@@ -63,7 +63,7 @@ class DiluteSparsity(BaseEstimator, TransformerMixin):
         
         replace = (np.random.random(size=X_.shape) > self.sparsity_rate).astype(int)
 
-        self.X_spr = np.minimum(X_, np.where(replace == 0, np.nan, np.inf))
+        self.X_spr = np.where(replace == 0, np.nan, X_)
 
         return self
 
