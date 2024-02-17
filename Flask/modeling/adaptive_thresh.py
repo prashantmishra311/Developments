@@ -128,7 +128,7 @@ class AdaptiveThresholding(BaseEstimator, TransformerMixin):
             values = np.asarray(list(cutoffs))
         assert_all_finite(values, allow_nan=False)
         
-        if not ((cutoffs >= 0)&(cutoffs <= 1)).all():
+        if not ((values >= 0)&(values <= 1)).all():
             raise ValueError("cutoffs can only be float between 0 and 1")
 
 
